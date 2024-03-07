@@ -1,6 +1,6 @@
 {
     "name": "@thinairthings/air-nnb",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -16,12 +16,8 @@
         "tsup": "^7.2.0",
         "typescript": "~5.2.2"
     },
-    "peerDependencies": {
-
-    },
+    "peerDependencies": {},
     "keywords": [],
     "author": "Dan Lannan",
-    "dependencies": {
-
-    }
+    "dependencies": {}
 }
