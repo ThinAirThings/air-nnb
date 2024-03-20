@@ -1,12 +1,10 @@
 
 
-
-export const tryCatch = <T, R>(callback: (input: T) => R) => {
-
+export const tryCatch = async <T, R>(callback: (input: T) => Promise<R>, params: T): Promise<R | Error> => {
     try {
-        return callback;
+        return await callback(params);
     } catch (error) {
         console.log(error);
-        return error;
+        return error as Error;
     }
 }
