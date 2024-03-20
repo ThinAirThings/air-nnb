@@ -1,8 +1,8 @@
 
 
-export const tryCatch = async <T, R>(callback: (input: T) => Promise<R>, params: T): Promise<R | Error> => {
+export const tryCatch = async <R>(callback: () => Promise<R>): Promise<R | Error> => {
     try {
-        return await callback(params);
+        return await callback();
     } catch (error) {
         console.log(error);
         return error as Error;
