@@ -7,4 +7,5 @@ export const tryCatch = async <R>(callback: () => Promise<R>): Promise<R | Error
         console.log(error);
         return error as Error;
     }
+
 }
